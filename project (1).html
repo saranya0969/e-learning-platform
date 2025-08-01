@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header>
+        <h1 style="font-size:60px;">Learn Python</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#basics">Basics</a></li>
+                <li><a href="#advanced">Advanced</a></li>
+                <li><a href="#statements">Statements</a></li>
+                <li><a href="#loops">Loops</a></li>
+                <li><a href="#operators">Operators</a></li>
+                <li><a href="#classes & objects">Classes & Objects</a></li>
+                <li><a href="#Inheritance">Inheritance</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction to Python</h2>
+            <p> Python is a high-level, general-purpose, and very popular programming language.<br/> Python programming language (latest Python 3) is being used in web development, and Machine Learning applications, along with all cutting-edge technology in Software Industry. <br/>Python language is being used by almost all tech-giant companies like – Google, Amazon, Facebook, Instagram, Dropbox, Uber… etc.</p>
+        </section>
+        <section id="basics">
+            <h2>Python Basics</h2>
+            <h3><u>Syntax</u>:</h3>
+            <pre>
+<code>print("Hello, World!")</code>
+            </pre>
+            <h2>Variables</h2>
+            <p>Python has no command for declaring a variable.<br/>
+                 A variable is created the moment you first assign a value to it..<br/>
+                 Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+ <pre><h2><u>EXAMPLE</u>:
+            <code>x = 5
+          y = "Hello, World!"</h2></pre></code>
+             <h2>casting</h2>
+             <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+     <pre><h2><u>EXAMPLE</u>:<code>
+                x = str(3)    # x will be '3'
+                y = int(3)    # y will be 3
+                z = float(3)  # z will be 3.0</code></h2></pre>
+            <h2>Many Values to Multiple Variables</h2>
+        <p>Python allows you to assign values to multiple variables in one line:<br/>
+          <b> Note</b>: Make sure the number of variables matches the number of values, or else you will get an error</p>
+<pre><code>
+        x, y, z = "Orange", "Banana", "Cherry"
+        print(x)
+        print(y)
+        print(z)
+    </code></pre>
+        
+        </section>
+        <section id="advanced">
+            <h2>Advanced Python</h2>
+            <h3>Functions</h3>
+            <pre>
+<code>def my_function():
+    print("Hello from a function")</code>
+            </pre>
+            <h3>Classes</h3>
+            <pre>
+<code>class MyClass:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print(f"Hello, {self.name}")</code>
+            </pre>
+        </section>
+        <section id="statements">
+            <h2>IF </h2>
+            <p>Python supports the usual logical conditions from mathematics:<br/>
+
+                Equals: a == b<br/>
+                Not Equals: a != b<br/>
+                Less than: a < b<br/>
+                Less than or equal to: a <= b<br/>
+                Greater than: a > b<br/>
+                Greater than or equal to: a >= b<br/>
+                These conditions can be used in several ways, most commonly in "if statements" and loops.<br/>
+                
+                An "if statement" is written by using the if keyword.</p>
+                <pre><code><h2>
+        <u>PROGRAM</u>:</h2>
+                    a = 33
+                    b = 200
+                    if b > a:
+                       print("b is greater than a")
+                    </code></pre>
+        <pre><h2>
+        <u>OUTPUT</u>:
+                b is greater than a
+        </h2></pre>
+        <h2>IF ELIF</h2>
+        <p>The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition"</p>
+        <pre><code><h2>
+    <u>PROGRAM</u>:
+        </h2>
+            a = 200
+            b = 33
+            if b > a:
+              print("b is greater than a")
+            elif a == b:
+              print("a and b are equal")
+            else:
+              print("a is greater than b")
+            
+        </code></pre>
+        <pre><h2>
+    <u>OUTPUT</u>:
+                 a is greater than b
+        </h2>
+        </pre>
+        <h2>ELSE</h2>
+        <p>The else keyword catches anything which isn't caught by the preceding conditions.</p>
+        <pre><code><h2>
+    <u>PROGRAM</u>:</h2>
+            a = 200
+            b = 33
+            if b > a:
+                print("b is greater than a")
+            else:
+                print("b is not greater than a")
+        </code></pre>
+        <pre><h2>
+    <u>OUTPUT</u>:
+            b is not greater than a
+        </h2></pre>
+        </section>
+        <section id="loops">
+            <h2>while loop</h2>
+            <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+            <pre ><h2>
+    <u>PROGRAM</u>:
+            </h2><code>
+                  i = 1
+                  while i < 6:
+                  print(i)
+                  i += 1</pre></code>
+      <pre><h2>   
+    <u>OUTPUT</u>:
+                1
+                2
+                3
+                4
+                5</h2></pre>
+            <h2>for loop</h2>
+            <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).<br/>
+
+                This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.<br/>
+                
+                With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+        <pre><h2>
+         <u>PROGRAM</u>:</h2>
+         <code>
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                       print(x)</code></pre>
+                          <pre><h2>
+        <u>OUTPUT</u>:
+                    apple
+                    banana
+                    cherry</h2></pre>
+        </section>
+        <section id="operators">
+            <h3>OPERATORS</h3> 
+            <table>
+             <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+</td>
+                    <td>Arithmetic</td>
+                    <td>Addition</td>
+                    <td>5 + 3 = 8</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Arithmetic</td>
+                    <td>Subtraction</td>
+                    <td>5 - 3 = 2</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Arithmetic</td>
+                    <td>Multiplication</td>
+                    <td>5 * 3 = 15</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Arithmetic</td>
+                    <td>Division</td>
+                    <td>5 / 2 = 2.5</td>
+                </tr>
+                <tr>
+                    <td>//</td>
+                    <td>Arithmetic</td>
+                    <td>Floor Division</td>
+                    <td>5 // 2 = 2</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Arithmetic</td>
+                    <td>Modulus</td>
+                    <td>5 % 2 = 1</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>Arithmetic</td>
+                    <td>Exponentiation</td>
+                    <td>5 ** 2 = 25</td>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>Comparison</td>
+                    <td>Equal to</td>
+                    <td>5 == 3 (False)</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Comparison</td>
+                    <td>Not equal to</td>
+                    <td>5 != 3 (True)</td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>Comparison</td>
+                    <td>Greater than</td>
+                    <td>5 &gt; 3 (True)</td>
+                </tr>
+                <tr>
+                    <td>&lt;</td>
+                    <td>Comparison</td>
+                    <td>Less than</td>
+                    <td>5 &lt; 3 (False)</td>
+                </tr>
+                <tr>
+                    <td>&gt;=</td>
+                    <td>Comparison</td>
+                    <td>Greater than or equal to</td>
+                    <td>5 &gt;= 5 (True)</td>
+                </tr>
+                <tr>
+                    <td>&lt;=</td>
+                    <td>Comparison</td>
+                    <td>Less than or equal to</td>
+                    <td>5 &lt;= 5 (True)</td>
+                </tr>
+                <tr>
+                    <td>&amp;&amp;</td>
+                    <td>Logical</td>
+                    <td>Logical AND</td>
+                    <td>(True &amp;&amp; False) = False</td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>Logical</td>
+                    <td>Logical OR</td>
+                    <td>(True || False) = True</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Logical</td>
+                    <td>Logical NOT</td>
+                    <td>!True = False</td>
+                </tr>
+                <tr>
+                    <td>is</td>
+                    <td>Identity</td>
+                    <td>Is</td>
+                    <td>5 is 5 (True)</td>
+                </tr>
+                <tr>
+                    <td>is not</td>
+                    <td>Identity</td>
+                    <td>Is not</td>
+                    <td>5 is not 3 (True)</td>
+                </tr>
+                <tr>
+                    <td>&lt;&lt;</td>
+                    <td>Bitwise</td>
+                    <td>Left shift</td>
+                    <td>2 &lt;&lt; 1 = 4</td>
+                </tr>
+                <tr>
+                    <td>&gt;&gt;</td>
+                    <td>Bitwise</td>
+                    <td>Right shift</td>
+                    <td>4 &gt;&gt; 1 = 2</td>
+                </tr>
+                <tr>
+                    <td>&amp;</td>
+                    <td>Bitwise</td>
+                    <td>Bitwise AND</td>
+                    <td>5 &amp; 3 = 1</td>
+                </tr>
+                <tr>
+                    <td>|</td>
+                    <td>Bitwise</td>
+                    <td>Bitwise OR</td>
+                    <td>5 | 3 = 7</td>
+                </tr>
+                <tr>
+                    <td>^</td>
+                    <td>Bitwise</td>
+                    <td>Bitwise XOR</td>
+                    <td>5 ^ 3 = 6</td>
+                </tr>
+                <tr>
+                    <td>~</td>
+                    <td>Bitwise</td>
+                    <td>Bitwise NOT</td>
+                    <td>~5 = -6</td>
+                </tr>
+            </tbody>
+        </table>
+       </section>
+    <section id="classes & objects">
+        <h3>CLASSES & OBJECTS</h3>
+        <p>A class is a user-defined blueprint or prototype from which objects are created.<br/> Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made</p>
+<h3><u>PROGRAM</u>:</h3>
+<pre><code>
+         class Person:
+         def __init__(self, name, age):
+           self.name = name
+           self.age = age
+         p1 = Person("John", 36)
+         print(p1.name)
+         print(p1.age)
+        </code></pre>
+        <pre>
+<h2><u>OUTPUT</u>:
+            John
+            36
+        </h2></pre>
+        </section>
+        <section id="Inheritance">
+            <h3>INHERITANCE</h3>
+            <p>Inheritance allows us to define a class that inherits all the methods and properties from another class.<br/>
+
+                Parent class is the class being inherited from, also called base class.<br/>
+                
+                Child class is the class that inherits from another class, also called derived class.
+                
+                </p>
+                <h2>Create a Parent Class</h2>
+                <pre><code><h2><u>PROGRAM</u>:</h2>
+ class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+   def printname(self):
+    print(self.firstname, self.lastname)
+
+#Use the Person class to create an object, and then execute the printname method:
+
+x = Person("John", "Doe")
+x.printname()
+                </code></pre>
+ <pre><h2><u>OUTPUT</u>:
+                    John Doe</h2></pre>
+                    <h2>Create a Child Class
+                    </h2>
+                    <p>To create a class that inherits the functionality from another class, send the parent class as a parameter when creating the child class:</p>
+    <pre><h2><u>PROGRAM</u>:</h2>
+                   <code>
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  pass
+
+x = Student("Mike", "Olsen")
+x.printname()
+                   </code></pre>
+<pre> <h2><u>OUTPUT</u>:
+                    Mike Olsen
+                </h2></pre>
+            </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Learn Python. All rights reserved.</p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
